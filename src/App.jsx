@@ -1,14 +1,15 @@
 import styled from "styled-components";
 import Produtos from "./Pages/Produtos";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
 
   return (
     <AppCotainer>
-      <Router>
-        <Rotes>
+      <BrowserRouter>
+        <Routes>
           <Route path="/" element={<Produtos />}/>
-        </Rotes>
-      </Router>
+        </Routes>
+      </BrowserRouter>
     </AppCotainer>
   )
 }

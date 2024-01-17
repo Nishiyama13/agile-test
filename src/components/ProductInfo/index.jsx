@@ -14,6 +14,7 @@ export default function ProductInfo() {
     
             } catch(e) {
                 console.log(e.message)
+                return res.status(500).json({ error: 'Internal server error' });
             }
         }
 
