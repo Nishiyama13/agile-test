@@ -11,6 +11,7 @@ This project is a React application for displaying product information using the
   - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Styling](#styling)
+- [Demo](#demo)
 
 ## Getting Started
 
@@ -68,3 +69,7 @@ src
 ```
 ### Styling
 The application uses styled-components for styling. Styles are organized within each component's styled.jsx file for better modularity.
+
+### Demo
+
+Check out the live demo of the project [here](https://agile-test-gamma.vercel.app/).
