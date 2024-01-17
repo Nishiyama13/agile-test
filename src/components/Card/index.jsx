@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import formatDate from "../../helpers/formatDate"
 
 const Card = ({ product }) => {
     const {
@@ -16,6 +17,10 @@ const Card = ({ product }) => {
         updated_at
     } = product;
 
+    const formattedStartDate = formatDate(period.start.date);
+    const formattedCreatedAtDate = formatDate(created_at.date);
+    const formattedUpdatedAtDate = formatDate(updated_at.date);
+
     return (
         <CardContainer>
             <div key={id} >
@@ -26,10 +31,10 @@ const Card = ({ product }) => {
                 <h3>Sku: {sku}</h3>
                 <h3>Status: {status} </h3>
                 
-                <h3>period: {period.start.date}</h3>
+                <h3>period: {formattedStartDate}</h3>
                 <h3>subscriptions_count: {subscriptions_count}</h3>
-                <h3>criado em: {created_at.date}</h3>
-                <h3>Última atualização: {updated_at.date}</h3>
+                <h3>criado em: {formattedCreatedAtDate}</h3>
+                <h3>Última atualização: {formattedUpdatedAtDate}</h3>
             </div>
         </CardContainer>
     );
