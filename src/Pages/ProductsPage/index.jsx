@@ -1,6 +1,6 @@
 import ProductInfo from "../../components/ProductInfo";
 
-export default function Produtos() {
+export default function Products() {
     return (
         <>
             <ProductInfo />

@@ -1,20 +1,20 @@
 import styled from "styled-components";
-import Produtos from "./Pages/Produtos";
+import Products from "./Pages/ProductsPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
 
   return (
-    <AppCotainer>
+    <AppContainer>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Produtos />}/>
+          <Route path="/" element={<Products />}/>
         </Routes>
       </BrowserRouter>
-    </AppCotainer>
+    </AppContainer>
   )
 }
 
-const AppCotainer = styled.div`
+const AppContainer = styled.div`
   display: flex;
   width: 100%;
 `
