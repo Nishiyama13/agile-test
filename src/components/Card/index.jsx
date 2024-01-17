@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import { CardContainer } from "./styled"
 import formatDate from "../../helpers/formatDate"
 
 const Card = ({ product }) => {
@@ -39,32 +39,5 @@ const Card = ({ product }) => {
         </CardContainer>
     );
 }
-
-const CardContainer = styled.div`
-  border: 1px solid rgba(255, 255, 255, 0.688);
-  padding: 10px;
-  margin: 10px;
-  border-radius: 8px;
-
-  h2 {
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-  }
-
-  h3 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  h4 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 13px;
-  }
-`
 
 export default Card;

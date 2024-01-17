@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchProductsData } from '../../services/apiAgileProducts';
-import styled from "styled-components";
+import { ProductsContainer } from "./styled"
+
 import Card from "../Card";
 
 export default function ProductInfo() {
@@ -39,14 +40,4 @@ export default function ProductInfo() {
         </ ProductsContainer>
     );
 
-}
-
-const ProductsContainer = styled.div`
-  border: 1px solid #000;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 8px;
-
-  display: flex;
-  flex-wrap: wrap;
-`
+};
