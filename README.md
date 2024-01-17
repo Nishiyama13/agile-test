@@ -1,4 +1,4 @@
-# Agile Teste Alícia
+# Agile Teste
 
 ## Overview
 
@@ -20,10 +20,10 @@ This project is a React application for displaying product information using the
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/agile-teste-alicia.git
+git clone https://github.com/Nishiyama13/agile-test.git
 ```
 ```bash
-cd agile-teste-alicia
+cd agile-test
 ```
 
 2. Install dependencies:
